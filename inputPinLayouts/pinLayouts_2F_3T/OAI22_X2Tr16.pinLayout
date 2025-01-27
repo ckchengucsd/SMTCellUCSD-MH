@@ -1,0 +1,113 @@
+a   PNR Testcase Generation::  DesignName = OAI22X2
+a   Output File:
+a   /home/eto10/PNRPROBE/PNR3F5T/pinLayouts/OAI22X2.pinLayout
+a   Width of Routing Clip    = 31
+a   Height of Routing Clip   = 2
+a   Tracks per Placement Row = 2.5
+a   Width of Placement Clip  = 31
+a   Tracks per Placement Clip = 2
+i   ===InstanceInfo===
+i   InstID Type Width
+i   insMM7 PMOS 2
+i   insMM6 PMOS 2
+i   insMM4 PMOS 2
+i   insMM5 PMOS 2
+i   insMM72 PMOS 2
+i   insMM62 PMOS 2
+i   insMM42 PMOS 2
+i   insMM52 PMOS 2
+i   insMM3 NMOS 2
+i   insMM2 NMOS 2
+i   insMM0 NMOS 2
+i   insMM1 NMOS 2
+i   insMM32 NMOS 2
+i   insMM22 NMOS 2
+i   insMM20 NMOS 2
+i   insMM12 NMOS 2
+i   ===PinInfo===
+i   PinID NetID InstID PinName PinDirection PinLength
+i   pin0 net0 insMM3 D s 2
+i   pin1 net1 insMM3 G s 2
+i   pin2 net2 insMM3 S s 2
+i   pin20 net0 insMM32 D s 2
+i   pin12 net1 insMM32 G s 2
+i   pin22 net2 insMM32 S s 2
+i   pin3 net2 insMM2 S t 2
+i   pin4 net3 insMM2 G s 2
+i   pin5 net0 insMM2 D t 2
+i   pin32 net2 insMM22 S t 2
+i   pin42 net3 insMM22 G s 2
+i   pin52 net0 insMM22 D t 2
+i   pin6 net0 insMM1 S t 2
+i   pin7 net4 insMM1 G s 2
+i   pin8 net5 insMM1 D s 2
+i   pin62 net0 insMM12 S t 2
+i   pin72 net4 insMM12 G s 2
+i   pin82 net5 insMM12 D s 2
+i   pin9 net5 insMM0 D t 2
+i   pin10 net6 insMM0 G s 2
+i   pin11 net0 insMM0 S t 2
+i   pin92 net5 insMM20 D t 2
+i   pin120 net6 insMM20 G s 2
+i   pin112 net0 insMM20 S t 2
+i   pin12 net7 insMM7 D s 2
+i   pin13 net1 insMM7 G t 2
+i   pin14 net8 insMM7 S s 2
+i   pin122 net7 insMM72 D s 2
+i   pin132 net1 insMM72 G t 2
+i   pin142 net8 insMM72 S s 2
+i   pin15 net7 insMM6 S t 2
+i   pin16 net3 insMM6 G t 2
+i   pin17 net5 insMM6 D t 2
+i   pin152 net7 insMM62 S t 2
+i   pin162 net3 insMM62 G t 2
+i   pin172 net5 insMM62 D t 2
+i   pin18 net8 insMM5 S t 2
+i   pin19 net4 insMM5 G t 2
+i   pin20 net9 insMM5 D s 2
+i   pin182 net8 insMM52 S t 2
+i   pin192 net4 insMM52 G t 2
+i   pin220 net9 insMM52 D s 2
+i   pin21 net9 insMM4 S t 2
+i   pin22 net6 insMM4 G t 2
+i   pin23 net5 insMM4 D t 2
+i   pin212 net9 insMM42 S t 2
+i   pin222 net6 insMM42 G t 2
+i   pin232 net5 insMM42 D t 2
+i   pin24 net8 ext VDD t -1 P
+i   pin25 net2 ext VSS t -1 P
+i   pin26 net6 ext A1 t -1 I
+i   pin27 net4 ext A2 t -1 I
+i   pin28 net3 ext B1 t -1 I
+i   pin29 net1 ext B2 t -1 I
+i   pin30 net5 ext ZN t -1 O
+i   ===NetInfo===
+i   NetID N-PinNet PinList
+i   net0 2PinNet pin11 pin6 pin5 pin0
+i   net1 3PinNet pin29 pin13 pin1
+i   net2 3PinNet pin25 pin3 pin2
+i   net3 3PinNet pin28 pin16 pin4
+i   net4 3PinNet pin27 pin19 pin7
+i   net5 5PinNet pin30 pin23 pin17 pin9 pin8
+i   net6 3PinNet pin26 pin22 pin10
+i   net7 2PinNet pin15 pin12
+i   net8 3PinNet pin24 pin18 pin14
+i   net9 2PinNet pin21 pin20
+i   ===PartitionInfo===
+i   InstID Type PartitionID
+i   insMM7 PMOS 4
+i   insMM6 PMOS 1
+i   insMM4 PMOS 2
+i   insMM5 PMOS 3
+i   insMM72 PMOS 4
+i   insMM62 PMOS 1
+i   insMM42 PMOS 2
+i   insMM52 PMOS 3
+i   insMM3 NMOS 4
+i   insMM2 NMOS 1
+i   insMM0 NMOS 2
+i   insMM1 NMOS 3
+i   insMM32 NMOS 4
+i   insMM22 NMOS 1
+i   insMM20 NMOS 2
+i   insMM12 NMOS 3

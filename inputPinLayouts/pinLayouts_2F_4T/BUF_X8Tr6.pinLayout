@@ -1,0 +1,47 @@
+a   PNR Testcase Generation::  DesignName = BUF_X8
+a   Output File:
+a   /home/eto10/PNR_PROBE/PNR_2F_4T/pinLayouts/BUF_X8.pinLayout
+a   Width of Routing Clip    = 31
+a   Height of Routing Clip   = 2
+a   Tracks per Placement Row = 3
+a   Width of Placement Clip  = 31
+a   Tracks per Placement Clip = 2
+i   ===InstanceInfo===
+i   InstID Type Width
+i   insMM3 PMOS 8
+i   insMM16 PMOS 12
+i   insMM17 PMOS 4
+i   insMM2 NMOS 8
+i   insMM18 NMOS 12
+i   insMM19 NMOS 4
+i   ===PinInfo===
+i   PinID NetID InstID PinName PinDirection PinLength
+i   pin0 net0 insMM2 D s 8
+i   pin1 net1 insMM2 G s 8
+i   pin2 net2 insMM2 S s 8
+i   pin20 net3 insMM16 D s 12
+i   pin21 net0 insMM16 G t 12
+i   pin22 net4 insMM16 S t 12
+i   pin23 net3 insMM17 D t 4
+i   pin24 net0 insMM17 G t 4
+i   pin25 net4 insMM17 S t 4
+i   pin6 net0 insMM3 D t 8
+i   pin7 net1 insMM3 G t 8
+i   pin8 net4 insMM3 S s 8
+i   pin26 net3 insMM18 D t 12
+i   pin27 net0 insMM18 G t 12
+i   pin28 net2 insMM18 S t 12
+i   pin29 net3 insMM19 D t 4
+i   pin30 net0 insMM19 G t 4
+i   pin31 net2 insMM19 S t 4
+i   pin12 net4 ext VDD t -1 P
+i   pin13 net2 ext VSS t -1 P
+i   pin14 net1 ext I t -1 I
+i   pin15 net3 ext Z t -1 O
+i   ===NetInfo===
+i   NetID N-PinNet PinList
+i   net0 4PinNet pin27 pin30 pin6 pin21 pin24 pin0
+i   net1 3PinNet pin14 pin7 pin1
+i   net2 3PinNet pin13 pin22 pin25 pin2
+i   net3 3PinNet pin15 pin26 pin29 pin20 pin23
+i   net4 3PinNet pin12 pin28 pin31 pin8
