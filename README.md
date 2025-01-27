@@ -18,7 +18,7 @@ for DTCO Exploration](https://vlsicad.ucsd.edu/Publications/Conferences/402/c402
 
 ## Main Flow
 <p align="center">
-    <img src="/doc/figure/flow.png" width="650">
+    <img src="/doc/figure/SMTCellMH-Flow.png" width="650">
 </p>
 
 To run our codebase, we need a customized data file called _.pinlayout_ that is converted from _.cdl_. This file comprised of basic cell design entities like pins, instances and nets. Additionally, you need to configure your own design by using _config.json_ files. To understand what each parameter is doing, please refer to documents under [HERE](https://github.com/ckchengucsd/SMTCellUCSD/tree/main/doc).
@@ -34,19 +34,8 @@ cmake ..
 make # you should genSMTInputAGR and convSMTResult executables
 cd ..
 ```
-Our underlying SMT solver is [Z3 Prover Version 4.8.5](https://github.com/Z3Prover/z3/releases/tag/Z3-4.8.5). Please follow the link, download and install the software. Alternatively, if you have Python installed, we recommend you to use `pip` for easy install. 
-*(Version 4.8.5 is highly recommended. Installing any other version of Z3 Prover may cause unexpected behavior.)*
-```bash
-# [optinal] create a Python virtual environment using venv
-python3 -m venv smtcell
-# [optinal] activate the virtual environment
-source smtcell/bin/activate
-# install z3-solver using pip
-pip install z3-solver
-# sanity check
-z3 --version # this should return Z3 version 4.8.5 - 64 bit
-```
-Now you are ready to go! Optionally, please consider installing the following tools and libraries for better experience.
+Our underlying SMT solver is [Z3 Prover Version 4.11.2](https://github.com/Z3Prover/z3/releases/tag/z3-4.11.2). Please follow the link, download and install the software. Alternatively, if you have Python installed, we recommend you to use `pip` for easy install. 
+*(Version 4.11.2 is highly recommended. Installing any other version of Z3 Prover may cause unexpected behavior.)*
 
 ### Optional Tools and Libraries (Recommended)
 _SMTCell_ depends on open source tools and libraries. Please download and install the following software if you want to enjoy the complete functionality of _SMTCell_.
@@ -64,6 +53,9 @@ make viewSMTCell
 ```
 ## Design Your Own Cell
 For setting up the cell configuration and customize cell based on your own designs, please visit this documentation [here](https://github.com/ckchengucsd/SMTCellUCSD/blob/main/doc/Design.md).
+
+## PROBE3.0 Compatibility
+PROBE3.0 is a systematic framework for design-technology pathfinding with improved design enablement. It is a powerful tool for generating custom PDKs. In _SMTCell_, we use PROBE3.0 to generate custom PDKs. We provide our Layout-vs-Schematic (LVS) deck and netlist for 2T/3T/4T cells under [here](./PROBE3.0_toolInputs).
 
 ## Releases at a Glance
 - **Version 1.5** (2025/01/24)

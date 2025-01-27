@@ -5,7 +5,7 @@
 PYTHON=$(shell which python3)
 
 # Z3 (4.11.2)
-Z3=/home/dinple/Z3/z3-z3-4.11.2/build/z3
+Z3=$(shell which z3)
 Z3FLAGS=parallel.enable=true -T:18000
 
 # Klayout
